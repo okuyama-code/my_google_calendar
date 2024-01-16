@@ -1,10 +1,16 @@
 import './App.css';
+import CalendarHeader from './components/CalendarHeader';
+import { getMonth } from './util';
 
 function App() {
+  console.table(getMonth());
+
   return (
-    <div className='App'>
-      <div className='text-3xl font-bold text-red-200'>aaa</div>
-    </div>
+    <>
+      <div className="h-screen flex flex-col">
+        <CalendarHeader />
+      </div>
+    </>
   );
 }
 
